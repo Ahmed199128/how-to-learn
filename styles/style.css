@@ -10,15 +10,7 @@
   background-color: white;
 }
 
-.logo {
-  display: block;
-  width: 183px;
-  height: 32px;
-}
-
-/* header section */
-
-  /* выше установили ограничения для секции */
+/* выше установили ограничения для секции */
 .header {
   position: relative;
   max-height: 756px;
@@ -29,6 +21,12 @@
   background-color: #f2f2f2;
   height: 100vh;
   overflow: hidden;
+}
+
+.logo {
+  display: block;
+  width: 183px;
+  height: 32px;
 }
 
 .logo_place_header{
@@ -57,6 +55,7 @@
   left: 64px;
   position: absolute;
   margin: 0;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -74,7 +73,6 @@
 .header__main-illustration {
   display: block;
   position: absolute;
-  z-index: 1;
   bottom: 0;
   right: 0;
   width: 765px;
@@ -83,6 +81,7 @@
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 /* description section */
@@ -106,7 +105,7 @@
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -119,7 +118,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0
+  margin: 0;
 }
 
 .two-columns__paragraph:nth-child(2) {
@@ -239,7 +238,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  text-decoration: none ;
+  text-decoration: none;
   color:  #2f80ed;
 }
 
@@ -374,3 +373,11 @@
   width: 16px;
   height: 16px;
 }
+
+/*   Теперь все изображения отображаются , текст подправлен 
+      На разных операционных системах текс : Занимайтесь по расписанию, короткими интенсивными интервалами. 
+      отображается по разному. на виндоус 10 отображается как на макета а на маке он переносит в новую строку.
+      изображение header  на разных разрешениях экрана может чуточку отличаться..
+      так же при отслеживании комитов можно  просмотреть по ссылке : https://github.com/Ahmed199128/how-to-learn.git  
+      пока git сбился , но я постараюсь сегодня исправить и залить изменения
+*/
