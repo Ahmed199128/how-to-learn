@@ -119,10 +119,11 @@
   font-size: 24px;
   font-weight: normal;
   margin: 0;
+  margin-bottom: 30px;
 }
 
-.two-columns__paragraph:nth-child(2) {
-  margin: 30px 0;
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -146,7 +147,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 20px;
   z-index: 1;
 }
@@ -166,6 +167,9 @@
   flex-direction: row;
   justify-content: space-between;
   width: 1100px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   flex-wrap: wrap;
   z-index: 1;
 }
@@ -269,35 +273,18 @@
 }
 
 .section-title_theme_dark {
-  width: 60%;
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
   color: white;
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
-  margin: 0%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   color: white;
 }
 
 .table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
   color: white;
 }
 
 .table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   color: white;
 }
 
