@@ -148,6 +148,7 @@
   font-weight: bold;
   margin: 0px;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .section-subtitle {
@@ -157,6 +158,7 @@
   font-size: 24px;
   font-weight: normal;
   margin: 0;
+  z-index: 1;
 }
 
 .table {
@@ -261,6 +263,9 @@
   right: -210px;
   height: 877px;
   width: 877px;
+  background-image: url("../images/kaufman-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-title_theme_dark {
@@ -310,8 +315,9 @@
   flex-direction: column;
   background-color: #1f1f1f;
   padding: 60px 0 40px;
-
+  box-sizing: border-box;
   align-items: center;
+  min-height: 350px;
 }
 
 .footer__columns {
@@ -320,7 +326,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
-  min-height: 350px;
+  flex: 1;
 }
 
 .footer__column_content-copyright {
@@ -330,13 +336,13 @@
   justify-content: space-between;
 }
 
-.logo-place_footer{
+.logo-place_footer {
   margin: 0%;
   width: 183px;
   height: 35px;
 }
 
-.footer__author{
+.footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -356,6 +362,9 @@
 .footer__column-links {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   margin-bottom: 16px;
 }
 
@@ -374,10 +383,15 @@
   height: 16px;
 }
 
-/*   Теперь все изображения отображаются , текст подправлен 
-      На разных операционных системах текс : Занимайтесь по расписанию, короткими интенсивными интервалами. 
+/* link означает ссылка  развее не правильнее его происвоить тегу <a> а не элементу перечесляемого списка <li>? */
+
+/*   Теперь все изображения отображаются , текст подправлен
+      На разных операционных системах текс : Занимайтесь по расписанию, короткими интенсивными интервалами.
       отображается по разному. на виндоус 10 отображается как на макета а на маке он переносит в новую строку.
       изображение header  на разных разрешениях экрана может чуточку отличаться..
-      так же при отслеживании комитов можно  просмотреть по ссылке : https://github.com/Ahmed199128/how-to-learn.git  
+      так же при отслеживании комитов можно  просмотреть по ссылке : https://github.com/Ahmed199128/how-to-learn.git
       пока git сбился , но я постараюсь сегодня исправить и залить изменения
 */
+
+
+
