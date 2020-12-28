@@ -296,7 +296,6 @@
   margin-top: 80px;
 }
 
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -316,15 +315,15 @@
   flex: 1;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.logo-place_footer {
-  margin: 0%;
+.logo_place_footer {
+  margin: 0;
   width: 183px;
   height: 35px;
 }
