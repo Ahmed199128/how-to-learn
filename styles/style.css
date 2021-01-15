@@ -60,14 +60,25 @@
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  top: 64px;
-  right: 0;
-  position: absolute;
-  display: block;
   background-color: #2f80ed;
   background-size: cover;
   height: 568px;
   width: 568px;
+}
+.rotation { 
+  top: 64px;
+  right: 0;
+  position: absolute;
+  display: block;
+  animation: floatingcube 20s infinite linear;
+}
+@keyframes floatingcube {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 
 .header__main-illustration {
@@ -83,6 +94,98 @@
   color: #2f80ed;
   text-decoration: none;
 }
+/* Секция, блок techniques*/
+.techniques {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.cards {
+  display: flex;
+  width: 920px;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cards-image{
+  height: 160px;
+  width: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50%;
+}
+.cards__item{
+  width: 240px;
+  text-align: center;
+}
+.cards__item + .cards__item {
+  margin-left: 100px;
+}
+.cards__item:nth-child(4n) {
+  margin-left: 0;
+}
+
+.cards-title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cards-description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 16px;
+}
+/* video section */
+.video{
+   display: flex;
+   padding-top: 100px;
+   flex-direction: column;
+   align-items: center;
+   width: 80%;
+   text-align: center;
+   margin: 0 auto;
+}
+.video {
+  z-index: 1;
+  position: relative;
+  margin-bottom: -40px;
+}
+.video-iframes{
+  display: flex;
+  margin-top: 50px;
+}
+.video-iframe + .video-iframe  {
+  margin-left: 20px;
+}
+/* oakley section */
+.oakley {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 160px;
+  background-color: rgb(245, 240, 240);
+}
+.two-columns__text {
+  width: 15%;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+.two-columns__paragraph1 {
+  width: 78%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 
 /* description section */
 
@@ -196,6 +299,59 @@
   margin: 0;
   margin-top: 20px;
 }
+/* section khan*/
+.khan {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+.book-pic {
+  background-image: url(../images/images_sprint-2/khan-book.jpg);
+  width: 620px;
+  height: 608px;
+  background-size: cover;
+}
+.book-container {
+  display: flex;
+  flex-direction: row;
+}
+.buy-link {
+  margin-left: 48px;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.khan__quote {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+  margin: 50px 0px 36px;
+}
+.khan__quote-autho {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.khan_quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0px 68px;
+}
 
 /* feynman section */
 
@@ -206,7 +362,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .feynman__title {
@@ -296,6 +452,29 @@
   margin-top: 80px;
 }
 
+/* section resources */
+.resources {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.section-title {
+  margin: 100px 0px 20px;
+}
+.logo-zone {
+  display: flex;
+  width: 1100px;
+  margin: 80px 0px 217px;
+}
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
+
+
+/* secion footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -315,15 +494,15 @@
   flex: 1;
 }
 
-.footer__column_content_copyright {
+.footer__column_content-copyright {
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.logo_place_footer {
-  margin: 0;
+.logo-place_footer {
+  margin: 0%;
   width: 183px;
   height: 35px;
 }
@@ -369,15 +548,8 @@
   height: 16px;
 }
 
-/* link означает ссылка  развее не правильнее его происвоить тегу <a> а не элементу перечесляемого списка <li>? */
-
-/*   Теперь все изображения отображаются , текст подправлен
-      На разных операционных системах текс : Занимайтесь по расписанию, короткими интенсивными интервалами.
-      отображается по разному. на виндоус 10 отображается как на макета а на маке он переносит в новую строку.
-      изображение header  на разных разрешениях экрана может чуточку отличаться..
-      так же при отслеживании комитов можно  просмотреть по ссылке : https://github.com/Ahmed199128/how-to-learn.git
-      пока git сбился , но я постараюсь сегодня исправить и залить изменения
-*/
-
+.link_item {
+  color: #f2f2f2;
+}
 
 
