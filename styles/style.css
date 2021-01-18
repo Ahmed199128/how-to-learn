@@ -29,7 +29,7 @@
   height: 32px;
 }
 
-.logo_place_header{
+.logo_place_header {
   position: absolute;
   left: 64px;
   top: 30px;
@@ -64,22 +64,27 @@
   background-size: cover;
   height: 568px;
   width: 568px;
-}
-.rotation { 
-  top: 64px;
-  right: 0;
   position: absolute;
   display: block;
-  animation: floatingcube 20s infinite linear;
+  top: 64px;
+  right: 0; 
 }
-@keyframes floatingcube {
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}
+
+
+@keyframes rotation {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
+
 
 .header__main-illustration {
   display: block;
@@ -94,6 +99,7 @@
   color: #2f80ed;
   text-decoration: none;
 }
+
 /* Секция, блок techniques*/
 .techniques {
   display: flex;
@@ -111,19 +117,23 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-.cards-image{
+
+.cards-image {
   height: 160px;
   width: 160px;
   margin: 60px 40px 43px;
   border-radius: 50%;
 }
-.cards__item{
+
+.cards__item {
   width: 240px;
   text-align: center;
 }
-.cards__item + .cards__item {
+
+.cards__item+.cards__item {
   margin-left: 100px;
 }
+
 .cards__item:nth-child(4n) {
   margin-left: 0;
 }
@@ -133,34 +143,40 @@
   font-size: 24px;
   font-weight: bold;
 }
+
 .cards-description {
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
   margin-top: 16px;
 }
+
 /* video section */
-.video{
-   display: flex;
-   padding-top: 100px;
-   flex-direction: column;
-   align-items: center;
-   width: 80%;
-   text-align: center;
-   margin: 0 auto;
+.video {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
 }
+
 .video {
   z-index: 1;
   position: relative;
   margin-bottom: -40px;
 }
-.video-iframes{
+
+.video-iframes {
   display: flex;
   margin-top: 50px;
 }
-.video-iframe + .video-iframe  {
+
+.video-iframe+.video-iframe {
   margin-left: 20px;
 }
+
 /* oakley section */
 .oakley {
   display: flex;
@@ -169,6 +185,7 @@
   padding-top: 160px;
   background-color: rgb(245, 240, 240);
 }
+
 .two-columns__text {
   width: 15%;
   color: #2f80ed;
@@ -177,6 +194,7 @@
   font-weight: normal;
   margin: 0;
 }
+
 .two-columns__paragraph1 {
   width: 78%;
   line-height: 34px;
@@ -299,6 +317,7 @@
   margin: 0;
   margin-top: 20px;
 }
+
 /* section khan*/
 .khan {
   display: flex;
@@ -306,16 +325,19 @@
   margin: 0 auto;
   width: 80%;
 }
+
 .book-pic {
   background-image: url(../images/images_sprint-2/khan-book.jpg);
   width: 620px;
   height: 608px;
   background-size: cover;
 }
+
 .book-container {
   display: flex;
   flex-direction: row;
 }
+
 .buy-link {
   margin-left: 48px;
   line-height: 42px;
@@ -324,16 +346,19 @@
   text-decoration: none;
   color: #2f80ed;
 }
+
 .khan__author {
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
 }
+
 .khan__title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
+
 .khan__quote {
   line-height: 34px;
   font-size: 24px;
@@ -341,11 +366,13 @@
   width: 790px;
   margin: 50px 0px 36px;
 }
+
 .khan__quote-autho {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
+
 .khan_quote-author-subline {
   line-height: 1.15;
   font-size: 24px;
@@ -401,7 +428,7 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
-  color:  #2f80ed;
+  color: #2f80ed;
 }
 
 /* kaufman principles section */
@@ -459,14 +486,17 @@
   margin: 0 auto;
   align-items: center;
 }
+
 .section-title {
   margin: 100px 0px 20px;
 }
+
 .logo-zone {
   display: flex;
   width: 1100px;
   margin: 80px 0px 217px;
 }
+
 .resources__logo {
   width: 270px;
   height: 38px;
@@ -516,7 +546,7 @@
 }
 
 .footer__column-heading {
-  line-height:30px;
+  line-height: 30px;
   font-size: 18px;
   font-weight: bold;
   color: white;
@@ -551,5 +581,3 @@
 .link_item {
   color: #f2f2f2;
 }
-
-
